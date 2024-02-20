@@ -1,0 +1,79 @@
+#oben{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#pic{
+    width: 10%;
+}
+.up{
+    font-size: 15px;
+}
+.right{
+    text-align: right;
+}
+p.mr {
+    width: 100%;
+    color: red;
+}
+p::first-letter {
+    color: black;
+    font-family: "Bookman Old Style";
+    font-size: xx-large;
+}
+.flex {
+    display: flex;
+}
+.mr {
+    margin-right: 22px;
+    font-family: "system-ui";
+
+}
+#idk{
+    margin-right: 22px;
+    width: 50%;
+
+}
+#mid{
+    width: 80%;
+}
+.ed{
+    text-align: center;
+    font-family: system-ui;
+}
+li:hover, th:hover, td:hover{
+    color: slategray;
+}
+p{
+    color: dimgrey !important;
+}
+
+#under{
+    text-align: right;
+}
+#a{
+    margin-right: 20px;
+}
+#anitamaxwin{
+    text-align: right;
+    margin-right: 15%;
+    font-family: system-ui;
+    font-size: x-small;
+    color: dimgrey;
+}
+#last{
+    width: 35%;
+}
+a:hover{
+    color: lightslategray;
+}
+#midkitty{
+    width: 50%;
+}
+.flex{
+    /*background-image: url("6.JPG");*/
+    /*background-size: cover;*/
+}
+#top{
+    background-color: lightgrey;
+}

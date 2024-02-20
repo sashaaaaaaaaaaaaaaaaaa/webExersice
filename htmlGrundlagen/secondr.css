@@ -1,0 +1,21 @@
+body{
+    background-image:url("5.JPG");
+    background-size: cover;
+}
+.flex {
+    display: flex;
+}
+.mr {
+    margin-right: 22px;
+    font-family: "system-ui";
+
+}
+.cat{
+    width: 30%;
+}
+.dog{
+    width: 30%;
+}
+.m{
+    width: 30%;
+}
