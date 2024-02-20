@@ -1,5 +1,5 @@
 body{
-    background-image:url("5.JPG");
+    background-image:url("14.jpg");
     background-size: cover;
 }
 .flex {
@@ -18,4 +18,16 @@ body{
 }
 .m{
     width: 30%;
+}
+#cat{
+    margin-left: 13%;
+}
+#dog{
+    margin-left: 29%;
+}
+#spotify{
+    margin-left: 28%;
+}
+cat, dog, spotify,:hover{
+    color: powderblue;
 }
