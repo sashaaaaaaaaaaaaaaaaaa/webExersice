@@ -6,9 +6,7 @@
 #pic{
     width: 10%;
 }
-.up{
-    font-size: 15px;
-}
+
 .right{
     text-align: right;
 }
@@ -47,10 +45,6 @@ li:hover, th:hover, td:hover{
 p{
     color: dimgrey !important;
 }
-
-#under{
-    text-align: right;
-}
 #a{
     margin-right: 20px;
 }
@@ -69,8 +63,20 @@ a:hover{
 }
 
 #top{
-    background-color: lightgrey;
+    background-color: lightgray;
 }
 #cat{
     text-align: right;
+}
+#wl{
+    margin-right: 10%;
+    font-family: "system-ui";
+}
+#w{
+    margin-left: 10%;
+    font-family: "system-ui";
+}
+body{
+    /*background: whitesmoke;*/
+
 }
