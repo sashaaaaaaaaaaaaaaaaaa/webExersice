@@ -1,0 +1,33 @@
+body{
+    background-image:url("6.JPG");
+    background-size: cover;
+}
+.flex {
+    display: flex;
+}
+.mr {
+    margin-right: 22px;
+    font-family: "system-ui";
+
+}
+.cat{
+    width: 30%;
+}
+.dog{
+    width: 40%;
+}
+.m{
+    width: 30%;
+}
+#cat{
+    margin-left: 13%;
+}
+#dog{
+    margin-left: 29%;
+}
+#spotify{
+    margin-left: 30%;
+}
+cat, dog, spotify,:hover{
+    color: powderblue;
+}
