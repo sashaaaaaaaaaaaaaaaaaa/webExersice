@@ -5,6 +5,7 @@
 
 img {
     border-radius: 20px;
+    object-fit: cover;
 }
 
 h1 {
