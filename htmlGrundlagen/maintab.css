@@ -1,104 +1,164 @@
-#oben{
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, .page {
+    height: 100%;
+}
+
+body {
+    font-family: "system-ui";
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.row {
+    flex: 1 1 auto;
+}
+
+#oben {
     /* ID selector */
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
-#pic{
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex > * {
+    width: 33%;
+    padding: 0 15px;
+}
+
+.flex img {
+    object-fit: cover;
+}
+
+#pic {
     width: 10%;
 }
 
-.right{
+.right {
     /* Class selector */
     text-align: right;
 }
-p.mr {
-    /* Element selector */
-    width: 100%;
-    color: red;
-}
+
+
 p::first-letter {
     /*::first-letter pseudo-element*/
     color: black;
     font-family: "Bookman Old Style";
     font-size: xx-large;
 }
-.flex {
-    display: flex;
-}
-.mr {
-    margin-right: 22px;
-    font-family: "system-ui";
 
-}
-#idk{
+#idk {
     margin-right: 22px;
     width: 50%;
-
+    object-fit: cover;
 }
-#mid{
+
+#mid {
     width: 80%;
 }
-.ed{
+
+.ed {
     text-align: center;
-    font-family: system-ui;
 }
-li:hover, th:hover, td:hover{
+
+li:hover, th:hover, td:hover {
     /*pseudo class*/
     color: slategray;
 }
-p{
+
+p {
     color: dimgrey !important;
 }
-#a{
+
+#a {
     margin-right: 20px;
 }
-#last{
+
+#last {
     width: 35%;
 }
-a:hover{
+
+a:hover {
     color: lightslategray;
 }
 
-#top{
+#top {
     background-color: lightgray;
 }
-#cat{
+
+#cat {
     text-align: right;
 }
-#wl{
+
+#wl {
     margin-right: 10%;
-    font-family: "system-ui";
 }
-#w{
+
+#w {
     margin-left: 10%;
-    font-family: "system-ui";
 }
+
 div {
     margin-bottom: 5%;
 }
-h4,h5{
+
+h4, h5 {
     /*selector combination*/
-    font-family: "system-ui";
     margin-left: 1%;
 }
-tr > th{
+
+tr > th {
     /* Child selector */
     background-color: lightgrey;
 }
-h4 + ul{
+
+h4 + ul {
     /*Adjacent Sibling Selector*/
-    font-family: system-ui;
 }
-div ~ h1{
+
+div ~ h1 {
     /*General Sibling Selector*/
     text-align: right;
     margin-right: 15%;
-    margin-bottom: 5%;
-    font-family: system-ui;
-    font-size: x-small;
     color: dimgrey;
 }
-div p{
 
+.fl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+@media screen and (max-width: 992px) {
+    .flex > * {
+        width: 50%;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex > * {
+        width: 100%;
+        padding: 0 5px;
+    }
+}
+
+

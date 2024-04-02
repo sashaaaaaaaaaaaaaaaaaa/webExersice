@@ -1,0 +1,122 @@
+* {
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+            'header header'
+            'sidebar content';
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 90px 1fr;
+}
+
+.item {
+    padding: 50px;
+    border: 1px yellow;
+}
+
+.header {
+
+    grid-area: header;
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto 2fr auto;
+    align-items: center;
+}
+
+.search {
+    grid-column: 2;
+
+}
+
+img {
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: black;
+
+}
+
+.vertical {
+    padding: 20px;
+    writing-mode: vertical-rl;
+}
+
+
+.content {
+    grid-area: content;
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.navbar a:hover {
+    background-color: lavender;
+    color: black;
+}
+
+.mid {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+.txt {
+    text-align: center;
+    grid-column: 1 / span 2;
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .item.sidebar {
+        display: none;
+    }
+
+    .item.header {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 20% 1fr;
+    }
+
+    .item.sidebar {
+        display: block;
+    }
+}
+
+#bu {
+    color: black;
+}
+
